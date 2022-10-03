@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest,WorkboxPlugin } = require('workbox-webpack-plugin');
-
+// const MiniCssExtractPlugin = require(' ');
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
 
@@ -12,6 +12,9 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
+    },
+    devServer:{
+      hot:'only',
     },
     output: {
       filename: '[name].bundle.js',
@@ -35,16 +38,16 @@ module.exports = () => {
           test : /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource'
         },
-        // { // rule to load bable.
-        //   test: /\.m?js$/,
-        //   exclude: /(node_modules|bower_components)/,
-        //   use: {
-        //     loader: 'babel-loader',
-        //     options: {
-        //       presets: ['@babel/preset-env']
-        //     }
-        //   }
-        // },
+        { // rule to load bable.
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        },
                 
       ],
       
