@@ -1,37 +1,55 @@
-# editorOfText
 
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
+  # editor Of Jate
 
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
+  Using Node.js this creates a readme.md for future repos.
+  
+  
+  ## Table of Contents 
+  1.  [Usage](#Usage)
+  2.  [Installation](#Installation)
+  3.  [Contributing](#Contributing)
+  4.  [Questions](#Questions)
+  5.  [Tests](#Tests)
+  6.  [License](#License)
+  
+  ## Usage 
 
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
+   An text editor that can be used off line and also downloaded as a progressive web app.
+  
+* <a href='https://thawing-stream-85573.herokuapp.com/'  target="_blank"> Click here for deployment </a> 
 
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
 
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
+  
+![Website](/screen.PNG)
+  
+## Installation 
+   1. Download repo 
+   2. "Npm Install" dependancies
+   3. "npm start"
+   4. Goto "localhost:3000"
+  
+  ## Contributing 
+  We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's: 
 
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
+ 1. Reporting a bug
 
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
+ 2. Discussing the current state of the code
 
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
+ 3. Submitting a fix 
 
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
+ 4. Proposing new features 
+  
+  ## Test 
+   This program only has one mode and no commands or test 
+  
+  
+  ## Questions
+  <a href='https://github.com/l1keafox'>l1keafox github.</a> 
+  
+  <a href="mailto: raymond.ed.lewis@gmail.com">Email :raymond.ed.lewis@gmail.com</a>
+  
+  ## License
+  [MIT](https://choosealicense.com/licenses/mit/)
+  
