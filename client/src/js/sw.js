@@ -5,6 +5,13 @@ const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 
+self.addEventListener('install', (e) => {}
+  // e.waitUntil(
+  //   caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
+  // )
+);
+
+
 precacheAndRoute(self.__WB_MANIFEST);
 
 const pageCache = new CacheFirst({
