@@ -3,7 +3,7 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  Using Node.js this creates a readme.md for future repos.
+  Text editor that is a progressive web app.
   
   
   ## Table of Contents 
